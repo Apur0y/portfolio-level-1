@@ -64,7 +64,7 @@ const Home = () => {
           <img
             src="/ar3.png"
             alt="Apu Roy"
-            className="w-72 h-72 rounded-full object-cover shadow-lg border-4 border-gray-700"
+            className="w-96 h-96 rounded-full object-cover shadow-lg border-4 border-gray-700"
           />
         </div>
 

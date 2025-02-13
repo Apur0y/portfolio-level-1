@@ -31,8 +31,8 @@ const Navbar = () => {
   const socialLinks = [
     { icon: <FaGithub />, link: "https://github.com/Apur0y" },
     { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/apu-roy-9192b9294/" },
-    { icon: <FaTwitter />, link: "https://twitter.com" },
-    { icon: <FaFacebook />, link: "https://twitter.com" },
+  
+    { icon: <FaFacebook />, link: "https://www.facebook.com/apuroy2785" },
 
   ];
 

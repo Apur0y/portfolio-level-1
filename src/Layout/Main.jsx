@@ -6,6 +6,7 @@ import Skills from "../pages/Home/Skills/Skills";
 import Education from "../pages/Home/Education/Education";
 import Footer from "../pages/Shared/Footer/Footer";
 import Projects from "../pages/Home/Projects/Projects";
+import Contact from "../pages/Home/Contact/Contact";
 
 const Main = () => {
   return (
@@ -21,6 +22,7 @@ const Main = () => {
         <Skills></Skills>
         <Education></Education>
         <Projects></Projects>
+        <Contact></Contact>
         <Footer></Footer>
       </div>
     </div>
