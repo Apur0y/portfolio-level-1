@@ -74,7 +74,7 @@ const Navbar = () => {
       {/* 🌟 Mobile Navigation Bar */}
 
 
-      <div className="navbar md:hidden  bg-gradient-to-r from-red-950  to-neutral-900">
+      <div className="navbar md:hidden  bg-gradient-to-br from-[#3F101F] via-neutral-950  to-[#3F101F]">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">

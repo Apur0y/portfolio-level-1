@@ -32,8 +32,8 @@ const Education = () => {
   return (
     <section className="py-10" id="education">
       <div className="container mx-auto">
-        <h2 className="text-2xl md:text-5xl font-bold text-center mb-8 border-b-2 pb-4">Education</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-11/12 mx-auto">
+        <h2 className="text-2xl md:text-3xl text-[#FF014F] font-bold text-center mb-8 border-b-2 pb-4">Education</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-11/12 mx-auto">
           {educationList.map((education, index) => (
             <div
               key={index}
