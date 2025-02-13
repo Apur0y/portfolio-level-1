@@ -81,7 +81,7 @@ const Projects = () => {
 
   return (
     <div id="projects">
-      <h1 className="text-2xl text-center my-7 border-b-2 pb-6 md:text-5xl font-semibold">Top Projects</h1>
+      <h1 className="text-2xl text-white text-center my-7 border-b-2 pb-6 md:text-5xl font-semibold">Top Projects</h1>
       {projects.map((project) => (
         <div key={project.id} className="mb-20">
           <h1 className="w-10/12 mx-auto text-4xl font-extrabold mb-4">{project.id}. {project.name}</h1>
@@ -126,13 +126,13 @@ const Projects = () => {
 {/** Wrap the modal inside AnimatePresence to enable exit animations */}
 <AnimatePresence>
   {selectedProject && (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-900/50 backdrop-blur-md">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-neutral-900/50 backdrop-blur-md overflow-y-auto">
       <motion.div
-        initial={{ scale: 0.8, opacity: 0, y: 50 }} // Starts small and lower
-        animate={{ scale: 1, opacity: 1, y: 0 }} // Expands smoothly
-        exit={{ scale: 0.8, opacity: 0, y: 50 }} // Shrinks and fades out on close
-        transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }} // Smooth effect
-        className="bg-white rounded-lg p-6 max-w-3xl shadow-xl"
+        initial={{ scale: 0.8, opacity: 0, y: 50 }} 
+        animate={{ scale: 1, opacity: 1, y: 0 }} 
+        exit={{ scale: 0.8, opacity: 0, y: 50 }} 
+        transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }} 
+        className="bg-white rounded-lg p-6 w-64 md:w-full max-w-3xl shadow-xl max-h-[80vh] overflow-y-auto"
       >
         <h2 className="text-2xl font-bold mb-4 text-black">{selectedProject.name}</h2>
         <p className="mb-2 text-black"><strong>Main Technology Stack:</strong> {selectedProject.stack}</p>
@@ -160,7 +160,7 @@ const Projects = () => {
           ))}
         </ul>
 
-        <div className="flex justify-end">
+        <div className="flex justify-center">
           <button
             className="px-4 py-2 bg-red-500 text-white rounded-md shadow hover:bg-red-600 transition-all"
             onClick={() => setSelectedProject(null)}
@@ -172,6 +172,7 @@ const Projects = () => {
     </div>
   )}
 </AnimatePresence>
+
 
 </div>
 

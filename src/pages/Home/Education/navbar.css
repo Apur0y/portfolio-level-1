@@ -1,0 +1,35 @@
+/* Add this to your existing CSS */
+.love {
+  position: relative;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.love::before,
+.love::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff029a, #e6018b);
+  transition: width 0.3s ease;
+}
+
+.love::before {
+  top: -2px;
+  left: -2px;
+}
+
+.love::after {
+  bottom: -2px;
+  right: -2px;
+}
+
+.love:hover::before,
+.love:hover::after {
+  width: calc(100% + 4px);
+}
+
+.love:hover {
+  border-color: transparent;
+}

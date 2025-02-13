@@ -4,7 +4,7 @@ import { FaEnvelope, FaPhone, FaWhatsapp } from 'react-icons/fa';
 const Contact = () => {
     return (
         <div id='contact'>
-              <div className="flex-1 bg- shadow-lg rounded-lg p-8">
+              <div className="flex-1 w-10/12 mx-auto shadow-lg rounded-lg p-8">
           <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
           <ul className="space-y-6">
             {/* Email */}

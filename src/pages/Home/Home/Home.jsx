@@ -15,19 +15,17 @@ const Home = () => {
     <div>
       <section
         id="home"
-        className="h-screen flex items-center justify-between px-16 bg-black text-white relative overflow-hidden"
+        className="md:h-screen flex flex-col-reverse md:flex-row   items-center justify-between px-16  text-white  overflow-hidden"
       >
         {/* Left Side */}
-        <div className="md:max-w-2xl">
-          <h2 className="text-gray-500 text-lg uppercase tracking-widest">
-            Hello
-          </h2>
+        <div className="md:max-w-2xl w-1/2">
+       
           <h1 className="md:text-7xl font-extrabold">
             I’m <span className="text-white">Apu Roy</span>
           </h1>
           <h2 className="text-3xl mt-2">
-            A{" "}
-            <span className="text-red-500 font-bold">
+          
+            <span className="text-[#FF014F] md:text-4xl font-bold">
               <Typewriter
                 options={{
                   strings: [
@@ -46,23 +44,27 @@ const Home = () => {
             A personal portfolio showcases my work, achievements, and skills
             that highlight my professional growth.
           </p>
-          <button
-  className={`fixed px-6 py-3 text-lg z-30 font-medium bg-red-500 rounded-lg shadow-lg hover:bg-red-600 transition-all flex items-center gap-3 
-  ${isScrolled ? "top-5 right-10 scale-90" : "mt-5"} animate-pulse hover:animate-none active:scale-105`}
->
-  <FaDownload /> Resume
-</button>
-
+          <a 
+           href="/resume.pdf"
+           download
+           >
+            <button
+              className={` mt-9 px-6 py-3 text-lg z-30 font-medium bg-[#FF014F] rounded-lg shadow-lg hover:bg-red-700 transition-all flex items-center gap-3 
+   animate-pulse hover:animate-none active:scale-105`}
+            >
+              <FaDownload /> Resume
+            </button>
+          </a>
         </div>
 
         {/* Right Side - Profile Image */}
-        <div className="relative md:w-96 flex justify-center">
+        <div className="relative  md:w-96 flex justify-center">
           {/* Red Glow Background */}
           <div className="absolute -top-10 -left-10 w-80 h-96 bg-red-500 blur-[100px] opacity-40 -z-10"></div>
 
           {/* Profile Image without Frame */}
           <img
-            src="/ar3.png"
+            src="/Apu Roy.png"
             alt="Apu Roy"
             className="w-96 h-96 rounded-full object-cover shadow-lg border-4 border-gray-700"
           />
@@ -70,16 +72,7 @@ const Home = () => {
 
         {/* Floating Portfolio Button */}
       </section>
-      {/* <a
-        href="/resume.pdf"
-        download
-        className={`fixed px-6 py-3 text-lg font-medium bg-red-500 rounded-lg shadow-lg hover:bg-red-600 transition-all flex items-center gap-3 ${
-          isScrolled ? "top-5 right-10 scale-90" : "mt-5"
-        }`}
-        style={{ transition: "all 0.5s ease-in-out" }}
-      >
-        <FaDownload /> View Portfolio
-      </a> */}
+      
     </div>
   );
 };

@@ -15,14 +15,12 @@ const About = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={fadeInUp}
-      className="w-10/12  mx-auto shadow-lg p-6 md:p-12 rounded-lg min-h-screen"
-      style={{
-        background: "linear-gradient(to top, #5a1a1a, #1a1a1a)",
-      }}
+      className="w-10/12 bg-neutral-900 mx-auto shadow-lg p-6 md:p-12 rounded-lg min-h-screen text-white"
+    
     >
-      <h2 className="text-3xl font-bold mb-4 text-center border-b-2">About Me</h2>
+      <h2 className="text-3xl font-bold mb-4 text-[#FF014F] text-center border-b-2">About Me</h2>
       <p className="text-lg leading-7 mb-4">
-        Hi, I’m <span className="font-bold text-blue-600">Apu Roy</span>, a passionate web developer. My journey into web development is driven by a love for creating seamless and engaging user experiences.
+        Hi, I’m Apu Roy, a passionate web developer. My journey into web development is driven by a love for creating seamless and engaging user experiences.
       </p>
       <p className="text-lg leading-7 mb-4">
         I specialize in building modern web applications using technologies like React, Tailwind CSS, MongoDB and JavaScript. Whether it's designing a responsive webpage, implementing complex features, or managing dynamic data, I enjoy turning ideas into reality. My recent projects include a cricket team management app, a gadget-buying platform, and data visualizations with Recharts.
