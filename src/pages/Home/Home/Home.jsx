@@ -18,11 +18,11 @@ const Home = () => {
         className="h-screen flex items-center justify-between px-16 bg-black text-white relative overflow-hidden"
       >
         {/* Left Side */}
-        <div className="max-w-2xl">
+        <div className="md:max-w-2xl">
           <h2 className="text-gray-500 text-lg uppercase tracking-widest">
             Hello
           </h2>
-          <h1 className="text-7xl font-extrabold">
+          <h1 className="md:text-7xl font-extrabold">
             I’m <span className="text-white">Apu Roy</span>
           </h1>
           <h2 className="text-3xl mt-2">
@@ -56,7 +56,7 @@ const Home = () => {
         </div>
 
         {/* Right Side - Profile Image */}
-        <div className="relative w-96 flex justify-center">
+        <div className="relative md:w-96 flex justify-center">
           {/* Red Glow Background */}
           <div className="absolute -top-10 -left-10 w-80 h-96 bg-red-500 blur-[100px] opacity-40 -z-10"></div>
 

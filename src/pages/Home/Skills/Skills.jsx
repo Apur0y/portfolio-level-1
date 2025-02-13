@@ -52,7 +52,7 @@ const Skills = () => {
           className="mb-12"
         >
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">{category}</h2>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 w-10/12 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 w-10/12 mx-auto">
             {skillCategories[category].map((skill, index) => (
               <Tilt key={index}>
                 <motion.div

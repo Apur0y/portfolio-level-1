@@ -9,14 +9,26 @@ import Projects from "../pages/Home/Projects/Projects";
 import Contact from "../pages/Home/Contact/Contact";
 
 const Main = () => {
+
+
+
   return (
     <div className="flex bg-black">
       {/* Navigations */}
-      <div className="flex fixed h-screen w-64">
+   <div>
+   <div className=" hidden md:flex fixed h-screen w-64">
         <Navbar></Navbar>
+
+        <div>
+          <div>
+
+          </div>
+   </div>
+          
+        </div>
       </div>
 
-      <div className="flex-1 ml-64">
+      <div className="md:flex-1 md:ml-64">
         <Home></Home>
         <About></About>
         <Skills></Skills>
