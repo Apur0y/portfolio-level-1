@@ -97,8 +97,8 @@ const Navbar = () => {
         {navItems.map((item) => (
             <button
               key={item.name}
-              className={`flex items-center gap-3 w-full px-6 py-3 text-lg transition-all 
-                ${active === item.name ? "bg-red-500/20 text-red-500" : "hover:text-red-500"}`}
+              className={`flex items-center gap-3 w-full px-6 py-3 text-lg rounded-md transition-all 
+                ${active === item.name ? "bg-[#3d0c1a] text-[#FF014F]" : "hover:text-[#FF014F]"}`}
               onClick={() => handleButton(item.name, item.id)}
             >
               {item.icon}
