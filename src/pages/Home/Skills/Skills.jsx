@@ -41,7 +41,7 @@ const Skills = () => {
     >
       {/* Section Title */}
       <motion.h1
-        className="text-center  text-xl md:text-3xl font-bold mb-8 border-b-2 pb-4"
+        className="text-center  text-xl md:text-3xl font-bold mb-8 border-b-2 border-b-[#FF014F] pb-4"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

@@ -92,58 +92,56 @@ const Projects = () => {
       <h1 className="text-2xl  text-[#FF014F] text-center my-7 border-b-2 pb-6 md:text-3xl font-semibold">
         Top Projects
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        {projects.map((project) => (
-          <div key={project.id} className="mb-20">
+
+      <motion.div></motion.div>
+
+      <div className="grid grid-cols-1 w-10/12 mx-auto lg:grid-cols-3 gap-5">
+        {projects.map((project, index) => (
+          <motion.div
+            key={project.id}
+            className="mb-20"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <div className="flex justify-between mx-auto max-w-sm h-[400px] rounded-4xl shadow-lg overflow-hidden group border border-gray-600">
               {/* Background Image */}
-              <div className=" bg-cover bg-center transition-all duration-500  ">
-                <img src={project.images[currentIndex]} alt="" className="rounded-2xl min-h-14 h-1/2" />
-              <div className="h-1/2">
-              <h1 className="w-10/12 mx-auto text-2xl mt-5 font-extrabold mb-4">
-                  {project.id}. {project.name}
-                </h1>
-                <p className="text-sm w-10/12 mx-auto">{project.description.split(" ").slice(0, 10).join(" ") + "..."}</p>
-                <div className="flex flex-row gap-4 w-11/12 mx-auto mt-4">
-                  <button className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-md shadow hover:bg-purple-700 transition-all">
-                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                      Live Preview
-                    </a>{" "}
-                    <FaArrowRight className="ml-2" />
-                  </button>
-                  <button
-                    className="px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-300 transition-all duration-100"
-                    onClick={() => setSelectedProject(project)}
-                  >
-                    Details
-                  </button>
+              <div className="bg-cover bg-center transition-all duration-500 bg-neutral-900">
+                <img
+                  src={project.images[currentIndex]}
+                  alt=""
+                  className="rounded-2xl min-h-14 h-1/2 hover:scale-110 transition-all duration-300"
+                />
+                <div className="h-1/2 bg-neutral-900">
+                  <h1 className="w-10/12 mx-auto text-2xl pt-5 font-extrabold mb-4">
+                    {project.id}. {project.name}
+                  </h1>
+                  <p className="text-sm w-10/12 mx-auto">
+                    {project.description.split(" ").slice(0, 10).join(" ") +
+                      "..."}
+                  </p>
+                  <div className="flex flex-row justify-center gap-4 w-11/12 mx-auto mt-4">
+                    <button className="flex items-center px-4 py-2 bg-[#FF014F] text-white rounded-md shadow hover:bg-[#ff014dcd] transition-all">
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Preview
+                      </a>
+                      <FaArrowRight className="ml-2" />
+                    </button>
+                    <button
+                      className="px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-300 transition-all duration-100"
+                      onClick={() => setSelectedProject(project)}
+                    >
+                      Details
+                    </button>
+                  </div>
                 </div>
               </div>
-              </div>
-              {/* style={{ backgroundImage: `url(${project.images[currentIndex]})` }} */}
-              {/* Buttons */}
-              {/* <div className=" inset-0 flex justify-center items-center  transition-opacity duration-500">
-            <div className="flex flex-col text-center bg-neutral-700/30 rounded-lg p-5">
-            <h1 className="text-4xl font-bold mb-2 bg-red-600 rounded-lg py-2 px-4 text-white">{project.name}</h1>
-                <p className="text-sm">{project.description.split(" ").slice(0, 15).join(" ") + "..."}</p>
-                <div className="flex flex-row gap-4 mx-auto mt-4">
-                  <button className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-md shadow hover:bg-purple-700 transition-all">
-                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                      Live Preview
-                    </a>{" "}
-                    <FaArrowRight className="ml-2" />
-                  </button>
-                  <button
-                    className="px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-300 transition-all duration-100"
-                    onClick={() => setSelectedProject(project)}
-                  >
-                    Details
-                  </button>
-                </div>
-              </div>
-            </div> */}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       {/* Modal */}
