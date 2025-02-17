@@ -58,7 +58,7 @@ const HoverCard = ({ education }) => {
       onMouseLeave={() => setIsHovered(false)}
       style={{
         background: isHovered
-          ? `radial-gradient(150px circle at ${hoverPos.x}px ${hoverPos.y}px, #FF014F, transparent)`
+          ? `radial-gradient(200px circle at ${hoverPos.x}px ${hoverPos.y}px, #FF014F, transparent)`
           : "transparent",
         transition: "background 0.3s ease-in-out",
       }}
@@ -68,7 +68,7 @@ const HoverCard = ({ education }) => {
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mb-12"
+          className=""
         >
   <div className="bg-neutral-900 h-44 rounded-lg shadow-sm">
         <div className="card-body">

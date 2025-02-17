@@ -12,7 +12,12 @@ const Contact = () => {
             <FaEnvelope className="text-blue-500 text-2xl" />
             <div>
               <p className="text-lg font-medium">Email</p>
-              <p className="text-gray-600">apuroy2785@gmail.com</p>
+              <a 
+                href="mailto:apuroy2785@gmail.com" 
+                className="text-gray-600 hover:text-blue-400"
+              >
+                apuroy2785@gmail.com
+              </a>
             </div>
           </li>
           {/* Phone */}
@@ -20,7 +25,12 @@ const Contact = () => {
             <FaPhone className="text-green-500 text-2xl" />
             <div>
               <p className="text-lg font-medium">Phone</p>
-              <p className="text-gray-600">01786209895</p>
+              <a 
+                href="tel:+8801786209895" 
+                className="text-gray-600 hover:text-green-400"
+              >
+                01786209895
+              </a>
             </div>
           </li>
           {/* WhatsApp */}
@@ -28,7 +38,14 @@ const Contact = () => {
             <FaWhatsapp className="text-green-500 text-2xl" />
             <div>
               <p className="text-lg font-medium">WhatsApp</p>
-              <p className="text-gray-600">01786209895</p>
+              <a 
+                href="https://wa.me/8801786209895" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-green-400"
+              >
+                Message on WhatsApp
+              </a>
             </div>
           </li>
         </ul>
