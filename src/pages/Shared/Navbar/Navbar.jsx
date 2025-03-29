@@ -19,7 +19,7 @@ const Navbar = ({ activeSection }) => {
 
   const socialLinks = [
     { icon: <FaGithub />, link: "https://github.com/Apur0y" },
-    { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/apu-roy-9192b9294/" },
+    { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/apu-r0y/" },
     { icon: <FaFacebook />, link: "https://www.facebook.com/apuroy2785" },
   ];
 
@@ -70,48 +70,46 @@ const Navbar = ({ activeSection }) => {
       </div>
 
       {/* 🌟 Mobile Navigation Bar */}
-      <div className="navbar md:hidden bg-gradient-to-br from-[#3F101F] via-neutral-950 to-[#3F101F]">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-              <FaBars onClick={() => setIsMenuOpen(!isMenuOpen)} className="h-5 w-5" />
-            </div>
-            {isMenuOpen && (
-              <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                {navItems.map((item) => (
-                  <button
-                    key={item.name}
-                    className={`flex items-center gap-3 w-full px-6 py-3 text-lg rounded-md transition-all
-                      ${activeSection === item.id ? "bg-[#3d0c1a] text-[#FF014F]" : "hover:text-[#FF014F]"}`}
-                    onClick={() => handleButton(item.id)}
-                  >
-                    {item.icon}
-                    <span>{item.name}</span>
-                  </button>
-                ))}
-              </ul>
-            )}
-          </div>
-        </div>
-        <div className="navbar-center">
-          <a className="btn btn-ghost text-xl">Apu Roy</a>
-        </div>
-        <div className="navbar-end">
-          <div className="flex gap-4 justify-center">
-            {socialLinks.map((social, index) => (
-              <a 
-                key={index} 
-                href={social.link} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-2xl transition-all duration-300 hover:text-red-500 hover:scale-110"
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
+   {/* 🌟 Mobile Navigation Bar */}
+<div className="md:hidden bg-gradient-to-br from-[#3F101F] via-neutral-950 to-[#3F101F] p-4">
+  <div className="flex justify-between items-center">
+    <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white text-2xl">
+      {isMenuOpen ? <FaTimes /> : <FaBars />}
+    </button>
+    <a className="text-white text-xl font-semibold">Apu Roy</a>
+    <div className="flex gap-4">
+      {socialLinks.map((social, index) => (
+        <a 
+          key={index} 
+          href={social.link} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-2xl transition-all duration-300 hover:text-red-500 hover:scale-110"
+        >
+          {social.icon}
+        </a>
+      ))}
+    </div>
+  </div>
+
+  {/* Menu Items - Show when `isMenuOpen` is true */}
+  {isMenuOpen && (
+    <div className="mt-4 bg-neutral-900 p-4 rounded-lg shadow-lg">
+      {navItems.map((item) => (
+        <button
+          key={item.name}
+          className={`flex items-center gap-3 w-full px-4 py-2 text-lg rounded-md transition-all
+            ${activeSection === item.id ? "bg-[#3d0c1a] text-[#FF014F]" : "hover:text-[#FF014F]"}`}
+          onClick={() => handleButton(item.id)}
+        >
+          {item.icon}
+          <span>{item.name}</span>
+        </button>
+      ))}
+    </div>
+  )}
+</div>
+
     </>
   );
 };
