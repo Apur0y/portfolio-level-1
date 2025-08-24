@@ -1,8 +1,16 @@
 import { useState } from "react";
-import { 
-  FaHome, FaUser, FaCode, FaGraduationCap, 
-  FaProjectDiagram, FaEnvelope, FaGithub, 
-  FaLinkedin, FaFacebook, FaBars, FaTimes 
+import {
+  FaHome,
+  FaUser,
+  FaCode,
+  FaGraduationCap,
+  FaProjectDiagram,
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaBars,
+  FaTimes,
 } from "react-icons/fa";
 
 const Navbar = ({ activeSection }) => {
@@ -10,10 +18,10 @@ const Navbar = ({ activeSection }) => {
 
   const navItems = [
     { name: "Home", icon: <FaHome />, id: "home" },
+    { name: "Projects", icon: <FaProjectDiagram />, id: "projects" },
     { name: "About", icon: <FaUser />, id: "about" },
     { name: "Skills", icon: <FaCode />, id: "skills" },
     { name: "Education", icon: <FaGraduationCap />, id: "education" },
-    { name: "Projects", icon: <FaProjectDiagram />, id: "projects" },
     { name: "Contact", icon: <FaEnvelope />, id: "contact" },
   ];
 
@@ -44,7 +52,11 @@ const Navbar = ({ activeSection }) => {
             <button
               key={item.name}
               className={`flex items-center mx-auto gap-3 w-56 px-3 py-2 text-md transition-all rounded-lg font-semibold duration-500
-                ${activeSection === item.id ? "bg-[#3d0c1a] text-[#FF014F]" : "hover:text-[#FF014F]"}`}
+                ${
+                  activeSection === item.id
+                    ? "bg-[#3d0c1a] text-[#FF014F]"
+                    : "hover:text-[#FF014F]"
+                }`}
               onClick={() => handleButton(item.id)}
             >
               {item.icon}
@@ -56,10 +68,10 @@ const Navbar = ({ activeSection }) => {
         <div className="divider"></div>
         <div className="flex  pb-6 justify-around w-10/12 mx-auto">
           {socialLinks.map((social, index) => (
-            <a 
-              key={index} 
-              href={social.link} 
-              target="_blank" 
+            <a
+              key={index}
+              href={social.link}
+              target="_blank"
               rel="noopener noreferrer"
               className="text-2xl transition-all duration-300 hover:mx-3 hover:text-red-500 hover:scale-110"
             >
@@ -70,46 +82,52 @@ const Navbar = ({ activeSection }) => {
       </div>
 
       {/* 🌟 Mobile Navigation Bar */}
-   {/* 🌟 Mobile Navigation Bar */}
-<div className="md:hidden bg-gradient-to-br from-[#3F101F] via-neutral-950 to-[#3F101F] p-4">
-  <div className="flex justify-between items-center">
-    <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white text-2xl cursor-pointer">
-      {isMenuOpen ? <FaTimes /> : <FaBars />}
-    </button>
-    <a className="text-white text-xl font-semibold">Apu Roy</a>
-    <div className="flex gap-4">
-      {socialLinks.map((social, index) => (
-        <a 
-          key={index} 
-          href={social.link} 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-2xl transition-all duration-300 hover:text-red-500 hover:scale-110"
-        >
-          {social.icon}
-        </a>
-      ))}
-    </div>
-  </div>
+      {/* 🌟 Mobile Navigation Bar */}
+      <div className="md:hidden bg-gradient-to-br from-[#3F101F] via-neutral-950 to-[#3F101F] p-4">
+        <div className="flex justify-between items-center">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-white text-2xl cursor-pointer"
+          >
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+          <a className="text-white text-xl font-semibold">Apu Roy</a>
+          <div className="flex gap-4">
+            {socialLinks.map((social, index) => (
+              <a
+                key={index}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl transition-all duration-300 hover:text-red-500 hover:scale-110"
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+        </div>
 
-  {/* Menu Items - Show when `isMenuOpen` is true */}
-  {isMenuOpen && (
-    <div className="mt-4 bg-neutral-900 p-4 rounded-lg shadow-lg">
-      {navItems.map((item) => (
-        <button
-          key={item.name}
-          className={`flex items-center gap-3 w-full px-4 py-2 text-lg rounded-md transition-all
-            ${activeSection === item.id ? "bg-[#3d0c1a] text-[#FF014F]" : "hover:text-[#FF014F]"}`}
-          onClick={() => handleButton(item.id)}
-        >
-          {item.icon}
-          <span>{item.name}</span>
-        </button>
-      ))}
-    </div>
-  )}
-</div>
-
+        {/* Menu Items - Show when `isMenuOpen` is true */}
+        {isMenuOpen && (
+          <div className="mt-4 bg-neutral-900 p-4 rounded-lg shadow-lg">
+            {navItems.map((item) => (
+              <button
+                key={item.name}
+                className={`flex items-center gap-3 w-full px-4 py-2 text-lg rounded-md transition-all
+            ${
+              activeSection === item.id
+                ? "bg-[#3d0c1a] text-[#FF014F]"
+                : "hover:text-[#FF014F]"
+            }`}
+                onClick={() => handleButton(item.id)}
+              >
+                {item.icon}
+                <span>{item.name}</span>
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
     </>
   );
 };
