@@ -6,19 +6,7 @@ const Home = () => {
   return (
     <div className="relative mb-9">
       {/* 🔹 Background Video with Dark Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full z-10 opacity-55">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute top-0 left-0 w-full h-full object-cover"
-        >
-          <source src="/black-node.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        {/* Dark Overlay for better text readability */}
-        {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div> */}
-      </div>
+     
 
       <section
         id="home"
@@ -51,7 +39,7 @@ const Home = () => {
           <a
           className="flex justify-center md:justify-start"
           href="/Apu Roy MERN Developer.pdf" download>
-            <button className="mt-9 px-6 py-3 text-lg font-medium bg-[#FF014F] rounded-lg shadow-lg hover:bg-[#ff014dd5] transition-all flex items-center   gap-3 animate-pulse hover:animate-none active:scale-105">
+            <button className="mt-9 cursor-pointer px-6 py-3 text-lg font-medium bg-[#FF014F] rounded-lg shadow-lg hover:bg-[#ff014dd5] transition-all flex items-center   gap-3 animate-pulse hover:animate-none active:scale-105">
               <FaDownload /> Resume
             </button>
           </a>

@@ -73,7 +73,7 @@ const Navbar = ({ activeSection }) => {
    {/* 🌟 Mobile Navigation Bar */}
 <div className="md:hidden bg-gradient-to-br from-[#3F101F] via-neutral-950 to-[#3F101F] p-4">
   <div className="flex justify-between items-center">
-    <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white text-2xl">
+    <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white text-2xl cursor-pointer">
       {isMenuOpen ? <FaTimes /> : <FaBars />}
     </button>
     <a className="text-white text-xl font-semibold">Apu Roy</a>

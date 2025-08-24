@@ -81,13 +81,39 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="md:flex-1 md:ml-64 w-full">
-        <section ref={sectionRefs.home} id="home"><Home /></section>
-        <section ref={sectionRefs.about} id="about"><About /></section>
-        <section ref={sectionRefs.skills} id="skills"><Skills /></section>
-        <section ref={sectionRefs.education} id="education"><Education /></section>
-        <section ref={sectionRefs.projects} id="projects"><Projects /></section>
-        <section ref={sectionRefs.contact} id="contact"><Contact /></section>
+      <div className="relative md:flex-1 md:ml-64 w-full z-10">
+        <div className="absolute top-0 left-0 w-full h-full z-10 opacity-55">
+          <video
+            autoPlay
+            loop
+            muted
+            className="fixed top-0 left-0 w-full h-full object-cover -z-10"
+          >
+            <source src="/black-node.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {/* Dark Overlay for better text readability */}
+          {/* <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div> */}
+        </div>
+        <section ref={sectionRefs.home} id="home">
+          <Home />
+        </section>
+           <section className="relative z-20" ref={sectionRefs.projects} id="projects">
+          <Projects />
+        </section>
+        <section className="relative z-10" ref={sectionRefs.about} id="about">
+          <About />
+        </section>
+        <section className="relative z-10" ref={sectionRefs.skills} id="skills">
+          <Skills />
+        </section>
+        <section className="relative z-10" ref={sectionRefs.education} id="education">
+          <Education />
+        </section>
+     
+        <section className="relative z-10" ref={sectionRefs.contact} id="contact">
+          <Contact />
+        </section>
         <Footer />
       </div>
     </div>
