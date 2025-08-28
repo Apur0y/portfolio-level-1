@@ -30,11 +30,11 @@ const projects = [
     id: 4,
     name: "Ticket Booking Platform for Bus, Movies & Events",
     description:
-      "Edu Quest  Online Teaching Platform Main technology stack used: React.js, Tailwind CSS, Node.js, Express.js, MongoDB, Firebase, JWT, AxiosBrief description:Edu Quest is a React-based online teaching platform that facilitates learning by connecting students and tutors. It provides distinct roles for students, tutors, and admins, ensuring an interactive and secure learning experience.Live project link:Edu Quest Live SiteGitHub repository link (only client):Edu Quest Client RepositoryChallenges faced while developing the project:Implementing Firebase authentication securely while managing JWT-based authorization.Ensuring smooth role-based access control for students, tutors, and admins.Optimizing database queries for efficient CRUD operations.Potential improvements and future plans for the project:Adding real-time chat functionality between students and tutors.Implementing a payment gateway for premium courses.Enhancing UI/UX with more interactive components.",
-    liveLink: "https://edu-quest-aa2b3.web.app/",
-    images: ["/t3.png", "/t2.png", "/t1.png"],
+      "Ezy Ticket is a collaborative ticket booking platform (April 2025) developed as a team project to streamline the ticket reservation process. The platform is built with React.js, Tailwind CSS, Node.js, Express.js, MongoDB, and Redux Toolkit, ensuring organized state management and smooth client–server communication. It integrates Firebase authentication with JWT for secure access control and leverages sslcommerz to provide a reliable and secure payment system. Backend functionality is enhanced with CORS handling and environment variable configurations, ensuring both security and scalability. This project emphasizes robust state management, secure payment processing, and clean architecture in full-stack development.",
+    liveLink: "https://ezy-ticket.vercel.app/",
+    images: ["/t3.png", "/t2.png", "/t1.png", "/t4.png", "/t5.png"],
     stack:
-      "React.js, Tailwind CSS, Node.js, Express.js, MongoDB, Firebase, JWT, Axios",
+      "React.js, Tailwind, Node.js, Express.js, Mongo DB, Redux, sslcommerz, Firebase, JWT",
     // description: "Edu Quest is a React-based online teaching platform...",
 
     githubClient: "https://github.com/Apur0y/edu-quest-client-side",
@@ -232,7 +232,7 @@ const Projects = () => {
       </div>
               
       {/* Modal */}
-      <h1 onClick={()=>setSeeMore(!seeMore)} className="text-md cursor-pointer  text-[#FF014F]/0 hover:text-[#FF014F]  text-center  pb-12 md:text-xl font-semibold">
+      <h1 onClick={()=>setSeeMore(!seeMore)} className="text-md cursor-pointer  text-[#FF014F]/70 hover:text-[#FF014F]  text-center  pb-12 md:text-xl font-semibold">
         {!seeMore?"See More": "See Less" }
       </h1>
 
