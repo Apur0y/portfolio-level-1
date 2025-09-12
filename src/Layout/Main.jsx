@@ -115,9 +115,7 @@ const Main = () => {
         <section className="relative z-10" ref={sectionRefs.contact} id="contact">
           <Contact />
         </section>
-        <section className="relative z-10" ref={sectionRefs.contact} id="contact">
-          <PillSplitter/>
-        </section>
+  
         <Footer />
       </div>
     </div>
