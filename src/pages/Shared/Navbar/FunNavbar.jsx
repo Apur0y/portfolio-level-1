@@ -14,17 +14,15 @@ import {
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = ({ activeSection }) => {
+const FunNavbar = ({ activeSection, setActiveSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate =useNavigate()
 
   const navItems = [
     { name: "Home", icon: <FaHome />, id: "home" },
-    { name: "Projects", icon: <FaProjectDiagram />, id: "projects" },
-    { name: "Fun Projects", icon: <FaProjectDiagram />, id: "fun-projects" },
-    { name: "About", icon: <FaUser />, id: "about" },
-    { name: "Skills", icon: <FaCode />, id: "skills" },
-    { name: "Education", icon: <FaGraduationCap />, id: "education" },
-    { name: "Contact", icon: <FaEnvelope />, id: "contact" },
+    { name: "Pill Splitter", icon: <FaProjectDiagram />, id: "pill" },
+    { name: "Drag and Drop", icon: <FaUser />, id: "dnd" },
+    { name: "Window", icon: <FaCode />, id: "window" },
   ];
 
   const socialLinks = [
@@ -32,18 +30,13 @@ const Navbar = ({ activeSection }) => {
     { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/apu-r0y/" },
     { icon: <FaFacebook />, link: "https://www.facebook.com/apuroy2785" },
   ];
-  const navigate =useNavigate()
 
   const handleButton = (id) => {
-    if(id==="fun-projects") {
-    console.log("here you");
-      navigate("/fun")
-    } 
-    setIsMenuOpen(false);
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+      console.log("My id ",id);
+          if (id === "home") {
+            navigate("/");
+          }
+    setActiveSection(id);
   };
 
   return (
@@ -58,7 +51,7 @@ const Navbar = ({ activeSection }) => {
           {navItems.map((item) => (
             <button
               key={item.name}
-              className={`flex items-center mx-auto gap-3 w-56 px-3 py-2 text-md transition-all rounded-lg font-semibold duration-500 cursor-pointer
+              className={`flex cursor-pointer items-center mx-auto gap-3 w-56 px-3 py-2 text-md transition-all rounded-lg font-semibold duration-500
                 ${
                   activeSection === item.id
                     ? "bg-[#3d0c1a] text-[#FF014F]"
@@ -138,4 +131,4 @@ const Navbar = ({ activeSection }) => {
   );
 };
 
-export default Navbar;
+export default FunNavbar;

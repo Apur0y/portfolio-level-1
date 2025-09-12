@@ -8,7 +8,7 @@ import Footer from "../pages/Shared/Footer/Footer";
 import Projects from "../pages/Home/Projects/Projects";
 import Contact from "../pages/Home/Contact/Contact";
 import { IoArrowUpCircle } from "react-icons/io5";
-import PillSplitter from "../pages/Pill/PillSpitter";
+import PillSplitter from "../pages/fun-projects/Pill/PillSpitter";
 
 const Main = () => {
   const [top, setTop] = useState(false);
