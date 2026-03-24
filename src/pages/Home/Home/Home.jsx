@@ -36,13 +36,13 @@ const Home = () => {
           <p className="mt-4 text-gray-300 drop-shadow-md">
           Passionate Web developer with experience in building responsive and user friendly web applications.
           </p>
-          <a
+          {/* <a
           className="flex justify-center md:justify-start"
           href="/Apu Roy MERN Developer.pdf" download>
             <button className="mt-9 cursor-pointer px-6 py-3 text-lg font-medium bg-[#FF014F] rounded-lg shadow-lg hover:bg-[#ff014dd5] transition-all flex items-center   gap-3 animate-pulse hover:animate-none active:scale-105">
               <FaDownload /> Resume
             </button>
-          </a>
+          </a> */}
         </div>
 
         {/* Right Side - Profile Image */}
