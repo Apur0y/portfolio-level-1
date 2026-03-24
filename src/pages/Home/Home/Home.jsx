@@ -23,7 +23,7 @@ const Home = () => {
                 options={{
                   strings: [
                     "Web Developer",
-                    "MERN Developer",
+                    "Full Stack Developer",
                     "Problem Solver",
                   ],
                   autoStart: true,
