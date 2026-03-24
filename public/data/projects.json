@@ -1,0 +1,122 @@
+[
+  {
+    "id": 6,
+    "title":"Eland",
+    "name": "AI-powered platform for land analysis and reporting.",
+    "description": "To solve this, I built Eland — an AI-powered land analysis platform. Full investment report, 5-year price prediction, risk assessment — all in one place.",
+    "liveLink": "https://eland-one.vercel.app/",
+    "images": ["/c1.png", "/c3.png", "/c2.png", "/c5.png", "/c4.png"],
+    "stack": ["Next.js", "TypeScript", "Redux RTK Query", "Stripe", "Jspdf", "Zod", "Tailwind", "Postman", "JWT"],
+    "githubClient": "https://github.com/Apur0y/e-land-frontend",
+    "challenges": [
+      "For the Resume, need to get the data from different forms, that was tough.",
+      "Implementing subscription-based payment system using Stripe.",
+      "The searching functionality is a bit challenging, but eventually done it."
+    ],
+    "improvements": [
+      "Adding real-time chat functionality between job seekers and employers.",
+      "Implementing resume builder for job seekers.",
+      "Searching functionality can be improved more."
+    ]
+  },
+  {
+    "id": 5,
+    "title":"Career Path",
+    "name": "Job Searching and Employment Platform",
+    "description": "Career Path is a job searching platform developed as a team project under my leadership (July 2025). The platform provides seamless job search functionality and features a subscription-based payment system integrated with Stripe. It includes a comprehensive dashboard for both Admins and Employers, offering full control over jobs and users. Built with Next.js, TypeScript, Redux RTK Query, Tailwind, Zod, and Jspdf, the project ensures strong type safety, efficient state management, and a modern, responsive UI. API development and testing were managed with Postman, while the client and server sides were structured to support scalability and secure operations.",
+    "liveLink": "https://career-path-pearl.vercel.app/",
+    "images": ["/c1.png", "/c3.png", "/c2.png", "/c5.png", "/c4.png"],
+    "stack": ["Next.js", "TypeScript", "Redux RTK Query", "Stripe", "Jspdf", "Zod", "Tailwind", "Postman", "JWT"],
+    "githubClient": "https://github.com/Apur0y/career-path-frontend",
+    "challenges": [
+      "For the Resume, need to get the data from different forms, that was tough.",
+      "Implementing subscription-based payment system using Stripe.",
+      "The searching functionality is a bit challenging, but eventually done it."
+    ],
+    "improvements": [
+      "Adding real-time chat functionality between job seekers and employers.",
+      "Implementing resume builder for job seekers.",
+      "Searching functionality can be improved more."
+    ]
+  },
+  {
+    "id": 4,
+    "title":"EzyTicket",
+    "name": "Ticket Booking Platform for Bus, Movies & Events",
+    "description": "Ezy Ticket is a collaborative ticket booking platform (April 2025) developed as a team project to streamline the ticket reservation process.",
+    "liveLink": "https://ezy-ticket.vercel.app/",
+    "images": ["/t3.png", "/t2.png", "/t1.png", "/t4.png", "/t5.png"],
+    "stack": ["React.js", "Tailwind", "Node.js", "Express.js", "MongoDB", "Redux", "sslcommerz", "Firebase", "JWT"],
+    "githubClient": "https://github.com/Apur0y/edu-quest-client-side",
+    "challenges": [
+      "Implementing Firebase authentication securely while managing JWT-based authorization.",
+      "Ensuring smooth role-based access control for students, tutors, and admins.",
+      "Optimizing database queries for efficient CRUD operations."
+    ],
+    "improvements": [
+      "Adding real-time chat functionality between students and tutors.",
+      "Implementing a payment gateway for premium courses.",
+      "Enhancing UI/UX with more interactive components."
+    ]
+  },
+  {
+    "id": 1,
+    "title":"Edu Quest",
+    "name": "Education Platform for Students & Tutors",
+    "description": "Edu Quest is a React-based online teaching platform that connects students and tutors.",
+    "liveLink": "https://edu-quest-aa2b3.web.app/",
+    "images": ["/e3.png", "/e2.png", "/e1.png"],
+    "stack": ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Firebase", "JWT", "Axios"],
+    "githubClient": "https://github.com/Apur0y/edu-quest-client-side",
+    "challenges": [
+      "Implementing Firebase authentication securely while managing JWT-based authorization.",
+      "Ensuring smooth role-based access control for students, tutors, and admins.",
+      "Optimizing database queries for efficient CRUD operations."
+    ],
+    "improvements": [
+      "Adding real-time chat functionality between students and tutors.",
+      "Implementing a payment gateway for premium courses.",
+      "Enhancing UI/UX with more interactive components."
+    ]
+  },
+  {
+    "id": 2,
+    "title":"Game Critique",
+    "name": "Explore Trending Game and Review Platform",
+    "description": "Game Critique is a web application where gamers can post, explore, and discuss game reviews.",
+    "liveLink": "https://aquamarine-custard-8f7ba5.netlify.app/",
+    "images": ["/m5.png", "/m6.png", "/m7.png", "/m8.png"],
+    "stack": ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Firebase", "JWT", "Axios"],
+    "githubClient": "https://github.com/Apur0y/game-critique-client-side",
+    "challenges": [
+      "Managing and displaying user-generated content dynamically.",
+      "Implementing a scalable data structure for storing and retrieving game reviews efficiently.",
+      "Handling authentication for user-generated reviews while ensuring data integrity."
+    ],
+    "improvements": [
+      "Adding a rating system with upvotes/downvotes on reviews.",
+      "Implementing real-time notifications for new reviews and comments.",
+      "Enhancing search and filtering options for better content discovery."
+    ]
+  },
+  {
+    "id": 3,
+    "title":"Volunteer Port",
+    "name": "Join Volunteer Opportunities Platform",
+    "description": "Volunteer Port is a platform where users can find and post volunteer opportunities.",
+    "liveLink": "https://volunteer-port.web.app/",
+    "images": ["/vol1.jpg", "/vol2.jpg", "/vol3.jpg", "/vol4.jpg"],
+    "stack": ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Firebase", "JWT", "Axios"],
+    "githubClient": "https://github.com/Apur0y/volunteer-port-client-site",
+    "challenges": [
+      "Ensuring secure authentication and access control for volunteer posts.",
+      "Structuring a database to manage volunteer events efficiently.",
+      "Designing a UI that enhances user engagement and interaction."
+    ],
+    "improvements": [
+      "Adding a real-time event calendar for tracking volunteer activities.",
+      "Implementing social media sharing features to boost engagement.",
+      "Enhancing user profiles with badges and participation history."
+    ]
+  }
+]

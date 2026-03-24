@@ -13,6 +13,7 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import dm from  "../../../../public/pic/Pro2.png"
 
 const Navbar = ({ activeSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +52,7 @@ const Navbar = ({ activeSection }) => {
       {/* 🌟 Desktop Navigation (Left Side) */}
       <div className="hidden md:flex justify-between flex-col lg:w-72 h-screen bg-gradient-to-br from-neutral-900 via-neutral-950 to-[#3F101F] text-white fixed top-0 left-0 bg-gray-900 shadow-lg">
         <div className="md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-neutral-700 mx-auto mt-6">
-          <img src="/new.jpg" alt="Profile" className="object-cover" />
+          <img src={dm} alt="Profile" className="object-cover" />
         </div>
 
         <nav className="flex gap-4 flex-col w-11/12 ml-6 mt-4">

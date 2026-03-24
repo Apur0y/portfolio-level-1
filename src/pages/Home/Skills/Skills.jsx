@@ -1,34 +1,51 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaGithub } from "react-icons/fa";
-import { SiTailwindcss, SiMongodb, SiTypescript, SiExpress, SiFirebase, SiJsonwebtokens, SiAxios, SiNetlify, SiVercel, SiReactrouter } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaGithub, FaFigma, FaStripe } from "react-icons/fa";
+import { SiTailwindcss, SiMongodb, SiTypescript, SiExpress, SiFirebase, SiJsonwebtokens, SiAxios, SiNetlify, SiVercel, SiReactrouter, SiNextdotjs, SiRedux, SiSocketdotio, SiPostman, SiZod, SiAdobeacrobatreader } from "react-icons/si";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import { TbApi } from "react-icons/tb";
+
 
 const Skills = () => {
-  const skillCategories = {
-    Frontend: [
-      { name: "HTML5", icon: <FaHtml5 className="text-orange-500 text-6xl" /> },
-      { name: "CSS3", icon: <FaCss3Alt className="text-blue-500 text-6xl" /> },
-      { name: "JavaScript", icon: <FaJs className="text-yellow-500 text-6xl" /> },
-      { name: "React", icon: <FaReact className="text-blue-400 text-6xl" /> },
-      { name: "Tailwind", icon: <SiTailwindcss className="text-teal-400 text-6xl" /> },
-      { name: "ReactRouter", icon: <SiReactrouter className="text-red-400 text-6xl" /> },
-    ],
-    Backend: [
-      { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-6xl" /> },
-      { name: "MongoDB", icon: <SiMongodb className="text-green-600 text-6xl" /> },
-      { name: "Express.js", icon: <SiExpress className="text-green-600 text-6xl" /> },
-      { name: "Firebase", icon: <SiFirebase className="text-orange-700 text-6xl" /> },
-      { name: "JWT", icon: <SiJsonwebtokens className="text-blue-700 text-6xl" /> },
-      { name: "Axios", icon: <SiAxios className="text-purple-800 text-6xl" /> },
-    ],
-    Tools: [
-      { name: "Git", icon: <FaGit className="text-orange-600 text-6xl" /> },
-      { name: "Github", icon: <FaGithub className="text-gray-600 text-6xl" /> },
-      { name: "Netlify", icon: <SiNetlify className="text-emerald-400 text-6xl" /> },
-      { name: "Vercel", icon: <SiVercel className="text-gray-600 text-6xl" /> },
-    ],
-  };
+const skillCategories = {
+  Frontend: [
+    { name: "HTML5", icon: <FaHtml5 className="text-orange-500 text-6xl" /> },
+    { name: "CSS3", icon: <FaCss3Alt className="text-blue-500 text-6xl" /> },
+    { name: "JavaScript", icon: <FaJs className="text-yellow-500 text-6xl" /> },
+    { name: "TypeScript", icon: <SiTypescript className="text-blue-600 text-6xl" /> },
+    { name: "React", icon: <FaReact className="text-blue-400 text-6xl" /> },
+    { name: "Next.js", icon: <SiNextdotjs className="text-white text-6xl" /> },
+    { name: "Redux", icon: <SiRedux className="text-purple-500 text-6xl" /> },
+    { name: "RTK Query", icon: <SiRedux className="text-purple-400 text-6xl" /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400 text-6xl" /> },
+    { name: "React Router", icon: <SiReactrouter className="text-red-400 text-6xl" /> },
+  ],
+
+  Backend: [
+    { name: "Node.js", icon: <FaNodeJs className="text-green-500 text-6xl" /> },
+    { name: "Express.js", icon: <SiExpress className="text-gray-400 text-6xl" /> },
+    { name: "MongoDB", icon: <SiMongodb className="text-green-600 text-6xl" /> },
+    { name: "Firebase", icon: <SiFirebase className="text-orange-500 text-6xl" /> },
+    { name: "JWT", icon: <SiJsonwebtokens className="text-blue-700 text-6xl" /> },
+    { name: "Socket.io", icon: <SiSocketdotio className="text-white text-6xl" /> },
+    { name: "REST API", icon: <TbApi className="text-green-400 text-6xl" /> },
+  ],
+
+  Tools: [
+    { name: "Git", icon: <FaGit className="text-orange-600 text-6xl" /> },
+    { name: "GitHub", icon: <FaGithub className="text-gray-600 text-6xl" /> },
+    { name: "Postman", icon: <SiPostman className="text-orange-500 text-6xl" /> },
+    { name: "Vercel", icon: <SiVercel className="text-white text-6xl" /> },
+    { name: "Netlify", icon: <SiNetlify className="text-emerald-400 text-6xl" /> },
+    { name: "Figma", icon: <FaFigma className="text-pink-500 text-6xl" /> },
+  ],
+
+  Others: [
+    { name: "Zod", icon: <SiZod className="text-blue-400 text-6xl" /> },
+    { name: "Stripe", icon: <FaStripe className="text-indigo-500 text-6xl" /> },
+    { name: "JSPDF", icon: <SiAdobeacrobatreader className="text-red-500 text-6xl" /> },
+  ],
+};
 
   return (
     <motion.div
